@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies File</title>
+</head>
+<body>
+    <h2>Cookies File</h2>
+    <script>
+        document.cookie = "user=JOHN";
+        alert(document.cookie);
+
+        let name = "my name";
+        let value = "John Doe";
+        document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+        alert(document.cookie);
+
+        letdate = new Date(Date.now() + 1000 * 60 * 60 * 24 * 365);
+        date= date.toUTCString();
+        document.cookie = "user=JOHN; expires=" + date + "; path=/";
+    </script>
+</body>
+</html>
