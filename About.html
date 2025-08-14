@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - NextGen Tech</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f9;
+        }
+        /* A simple background hero image with a dark overlay */
+        .hero-background {
+            background-image: url('pic/bgimg.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-[#1a237e] text-white p-4 lg:p-6 shadow-lg rounded-b-3xl">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <h1 class="text-3xl font-bold flex items-center mb-4 lg:mb-0">
+                <a href="index.html" class="flex items-center text-white hover:text-gray-200 transition-colors">
+                    <img src="pic/logo.jpg" alt="NextGen Tech Logo" class="h-10 w-10 rounded-full shadow-md mr-3">
+                    NextGen Tech
+                </a>
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="home.html" class="text-white hover:text-blue-300 font-semibold transition-colors border-b-2 border-transparent hover:border-blue-300 pb-1">Home</a></li>
+                    <li><a href="Shop.html" class="text-white hover:text-blue-300 font-semibold transition-colors">Shop</a></li>
+                    <li><a href="about.html" class="text-white hover:text-blue-300 font-semibold transition-colors border-b-2 border-blue-300 pb-1">About</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-blue-300 font-semibold transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Hero Section -->
+        <section class="hero-background text-white py-24 md:py-32 lg:py-48 flex items-center justify-center relative rounded-b-3xl">
+            <div class="absolute inset-0 bg-black opacity-60 rounded-b-3xl"></div>
+            <div class="container mx-auto text-center relative z-10">
+                <h2 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4 animate-fade-in-up">
+                    Our Story
+                </h2>
+                <p class="text-lg md:text-xl font-light mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-100">
+                    At NextGen Tech, we're dedicated to bringing the future to your doorstep. Our journey began with a simple idea: to make cutting-edge technology accessible to everyone.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mission & History Section -->
+        <section class="bg-white py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-[#1a237e] mb-12">Our Mission</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Founded in 2020, NextGen Tech started as a small team of tech enthusiasts with a passion for innovation. We quickly grew into a leading online retailer, driven by our commitment to quality products and exceptional customer service. Our mission is to curate a collection of the best and most innovative tech gadgets on the market, ensuring that our customers are always at the forefront of the digital world.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            We believe that technology should simplify life, not complicate it. That's why we focus on smart solutions that are not only powerful but also user-friendly and aesthetically pleasing.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="pic/Team picture.jpg" alt="A team working in an office" class="rounded-xl shadow-lg w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1a237e] mb-12">Meet the Team</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
+                        <img src="pic/vaskar.jpg" alt="Team Member Jane" class="rounded-full w-32 h-32 mx-auto mb-4 object-cover shadow-md">
+                        <h3 class="text-xl font-bold text-[#1a237e]">Vaskar Joshi</h3>
+                        <p class="text-gray-600">CEO & Founder</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
+                        <img src="pic/shahrihar.jpg" alt="Team Member John" class="rounded-full w-32 h-32 mx-auto mb-4 object-cover shadow-md">
+                        <h3 class="text-xl font-bold text-[#1a237e]">Md Shahriar Mim</h3>
+                        <p class="text-gray-600">Chief Technology Officer</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
+                        <img src="pic/tuhin.jpg" alt="Team Member Emily" class="rounded-full w-32 h-32 mx-auto mb-4 object-cover shadow-md">
+                        <h3 class="text-xl font-bold text-[#1a237e]">Yousufur Rahman Tuhin</h3>
+                        <p class="text-gray-600">Lead Product Designer</p>
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
+                        <img src="pic/mike.jpg" alt="Team Member Mike" class="rounded-full w-32 h-32 mx-auto mb-4 object-cover shadow-md">
+                        <h3 class="text-xl font-bold text-[#1a237e]">DR. Mubashar Ali </h3>
+                        <p class="text-gray-600">Head of Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#1a237e] text-white py-6 mt-12 rounded-t-3xl">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 NextGen Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
