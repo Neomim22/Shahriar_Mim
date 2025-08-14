@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - NextGen Tech</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS (requires Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f9;
+    }
+    .hero-background {
+      background-image: url('https://placehold.co/1920x1080/1a237e/ffffff?text=NextGen+Tech');
+      backface-visibility: inherit;
+      background-position: center;
+      background-size: cover;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in-up {
+      animation: fadeInUp 1s ease-out;
+    }
+  </style>
+</head>
+
+<body class="text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-[#1a237e] text-white p-6 shadow-lg rounded-b-3xl">
+    <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+      <a href="index.html" class="flex items-center text-white hover:text-blue-200 transition">
+        <img src="pic/logo.jpg" alt="NextGen Tech Logo" class="h-10 w-10 rounded-full shadow-md mr-3" />
+        <h1 class="text-3xl font-bold">NextGen Tech</h1>
+      </a>
+      <nav class="mt-4 lg:mt-0">
+        <ul class="flex space-x-6 text-lg font-semibold">
+          <li><a href="home.html" class="hover:text-blue-300">Home</a></li>
+          <li><a href="Shop.html" class="hover:text-blue-300">Shop</a></li>
+          <li><a href="about.html" class="hover:text-blue-300">About</a></li>
+          <li><a href="contact.html" class="hover:text-blue-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-background text-white py-32 relative rounded-b-3xl">
+    <div class="absolute inset-0 bg-black opacity-60 rounded-b-3xl"></div>
+    <div class="container mx-auto relative z-10 text-center px-4 animate-fade-in-up">
+       <p class="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto opacity-90 animate-fade-in-up delay-100
+    drop-shadow-[0_0_10px_rgba(0,200,255,0.5)]">
+    Your destination for the latest gadgets, smart solutions, and cutting-edge devices.
+</p>
+      <a href="Shop.html" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h18l-2 13H5L3 3z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16 16a2 2 0 100 4 2 2 0 000-4zM8 16a2 2 0 100 4 2 2 0 000-4z"></path>
+        </svg>
+        Explore Products
+      </a>
+    </div>
+  </section>
+<!-- Testimonials -->
+  <section class="bg-white py-20">
+  <div class="container text-center">
+    <h2 class="text-4xl font-bold text-[#1a237e] mb-14">What Our Customers Say</h2>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <!-- Testimonial 1 -->
+        <div class="carousel-item active">
+          <div class="bg-gray-100 p-8 rounded-xl shadow-lg mx-auto" style="max-width: 600px;">
+            <p class="text-lg italic mb-4 transition-all hover:text-blue-500 hover:scale-105">"Amazing quality and super fast delivery! My home office is now complete. Highly recommend."</p>
+            <span class="block font-semibold text-gray-600">– Jane Doe</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="bg-gray-100 p-8 rounded-xl shadow-lg mx-auto" style="max-width: 600px;">
+            <p class="text-lg italic mb-4 transition-all hover:text-blue-500 hover:scale-105">"Exceptional customer service and a great range of products. Will shop again!"</p>
+            <span class="block font-semibold text-gray-600">– Mark Stevens</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+         <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="bg-gray-100 p-8 rounded-xl shadow-lg mx-auto" style="max-width: 600px;">
+            <p class="text-lg italic mb-4 transition-all hover:text-blue-500 hover:scale-105">" I searching for a laptop charger for my assignment. this websites turns out to be ideal for me."</p>
+            <span class="block font-semibold text-gray-600">– DR. Rajan Neupane</span>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="bg-gray-100 p-8 rounded-xl shadow-lg mx-auto" style="max-width: 600px;">
+            <p class="text-lg italic mb-4 transition-all hover:text-blue-500 hover:scale-105">"obviously there are some problem with the website but the products are genuine."</p>
+            <span class="block font-semibold text-gray-600">–Mubashar Ali</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls (Buttons) -->
+      <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="text-dark">Previous</span>
+      </button>
+      <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="text-dark">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#0d1117] text-white py-8">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 space-y-6 md:space-y-0">
+
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="images/nextgen-logo.png" alt="NextGen Tech Logo" class="h-12 w-12 rounded-full shadow-lg" />
+      <h2 class="text-xl font-bold text-[#00f6ff]">NextGen Tech</h2>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="flex space-x-6 text-sm font-semibold">
+      <a href="home.html" class="hover:text-[#00f6ff] transition">Home</a>
+      <a href="Shop.html" class="hover:text-[#00f6ff] transition">Shop</a>
+      <a href="About.html" class="hover:text-[#00f6ff] transition">About</a>
+      <a href="Contact.html" class="hover:text-[#00f6ff] transition">Contact</a>
+    </div>
+
+    <!-- Newsletter -->
+    <form class="flex items-center space-x-2" onsubmit="alert('Thank you for subscribing!'); return false;">
+      <input type="email" placeholder="Email" required
+             class="p-2 rounded-l-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#00f6ff]" />
+      <button type="submit"
+              class="bg-[#00f6ff] text-[#0d1117] p-2 rounded-r-md font-semibold hover:bg-[#00cfff] transition transform hover:scale-105">
+        Subscribe
+      </button>
+    </form>
+
+    <!-- Social Media -->
+    <div class="flex space-x-4 text-lg">
+      <a href="#" class="hover:text-[#00f6ff] transition">Facebook</a>
+      <a href="#" class="hover:text-[#00f6ff] transition">Twitter</a>
+      <a href="#" class="hover:text-[#00f6ff] transition">Instagram</a>
+      <a href="#" class="hover:text-[#00f6ff] transition">Linkdn</a>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="text-center text-gray-400 text-sm mt-6">
+    &copy; 2024 NextGen Tech. All right reserved.  Privacy Policy | Terms of Use | Sales and Refund
+  </div>
+</footer>
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 flex justify-between items-center z-50 hidden">
+  <span>We use cookies to improve your experience. By using our site, you agree to our cookie policy.</span>
+  <button id="accept-cookies" class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">Accept</button>
+</div>
+
+<script>
+  // Function to set a cookie
+  function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = `${name}=${value};${expires};path=/`;
+  }
+
+  // Function to get a cookie
+  function getCookie(name) {
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const cookies = decodedCookie.split(';');
+    name = name + "=";
+    for (let c of cookies) {
+      while (c.charAt(0) === ' ') c = c.substring(1);
+      if (c.indexOf(name) === 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+  // Show banner if cookies not accepted
+  window.onload = function () {
+    if (!getCookie("cookiesAccepted")) {
+      document.getElementById("cookie-banner").classList.remove("hidden");
+    }
+  };
+
+  // Accept cookies button
+  document.getElementById("accept-cookies").addEventListener("click", function () {
+    setCookie("cookiesAccepted", "true", 365);
+    document.getElementById("cookie-banner").classList.add("hidden");
+  });
+</script>
